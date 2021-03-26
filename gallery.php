@@ -55,7 +55,8 @@ get_header();
 		?>
         <!-- single work item-->
         <div class="work">
-          <img src="<?php echo get_the_post_thumbnail_url();?>" class="img-box" />
+		  <a href="<?php echo get_the_post_thumbnail_url();?>" data-lightbox="mygallery" data-title="<?php the_title(); ?>"  ><img src="<?php echo get_the_post_thumbnail_url();?>" class="img-box" /></a>
+          
           <div class="image-overlay">
             <div class="image-text">
               <p><?php the_title(); ?></p>
@@ -90,6 +91,10 @@ get_header();
 		</div>
     </section>
 		 <!-- Gallery Section End -->
+
+		 <section id="portfolio">
+		 <?php echo do_shortcode('[Rich_Web_Video id="1"]');?>
+		 </section>
 		
 		
 

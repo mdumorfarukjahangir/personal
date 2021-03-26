@@ -56,10 +56,20 @@ function personal_register_required_plugins() {
 			'slug'      => 'contact-form-7',
 			'required'  => false,
 		),
-
 		
-	
-
+		array(
+			'name'      => 'Translation Plugin',
+			'slug'      => 'translatepress-multilingual',
+			'required'  => false,
+		),
+		array(
+			'name'      => 'Video Gallery',
+			'slug'      => 'slider-video',
+			'required'  => false,
+		),
+		
+		
+	 
 
 		
 

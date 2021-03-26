@@ -1412,7 +1412,11 @@ object {
 	border-radius: 10px;
 	margin: 10px 0;
 	overflow: hidden;
+	 
 	/*  image overlay*/
+  }
+  .work img:hover{
+	 
   }
   
   #portfolio img {

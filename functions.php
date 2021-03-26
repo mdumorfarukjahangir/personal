@@ -100,6 +100,7 @@ function personal_scripts() {
 	wp_enqueue_style( 'magnific-css', get_theme_file_uri( "/css/magnific-popup.min.css" ) );
 	wp_enqueue_style( 'carousel-css', get_theme_file_uri( "/css/owl-carousel.min.css" ) );
 	wp_enqueue_style( 'slicknav-css', get_theme_file_uri( "/css/slicknav.min.css" ) );
+	wp_enqueue_style( 'lightbox-css', get_theme_file_uri( "/css/lightbox.min.css" ) );
 	wp_enqueue_style( 're-css', get_theme_file_uri( "/css/documents.css" ) );
 	wp_enqueue_style( 'reset-css', get_theme_file_uri( "/css/reset.css" ) );
 	wp_enqueue_style( 'responsive-css', get_theme_file_uri( "/css/responsive.css" ) );
@@ -123,6 +124,7 @@ function personal_scripts() {
 	wp_enqueue_script( 'carousel-js', get_theme_file_uri( "/js/owl-carousel.min.js" ) , array("jquery"),null, true);
  
 	wp_enqueue_script( 'easing-js', get_theme_file_uri( "/js/easing.js" ) , array("jquery"),null, true);
+	wp_enqueue_script( 'lightbox-js', get_theme_file_uri( "/js/lightbox.min.js" ) , array("jquery"),null, true);
  
 	wp_enqueue_script( 'magnific-js', get_theme_file_uri( "/js/magnific-popup.min.js" ) , array("jquery"),null, true);
  
