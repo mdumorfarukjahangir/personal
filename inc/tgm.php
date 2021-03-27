@@ -53,7 +53,7 @@ function personal_register_required_plugins() {
 
 		array(
 			'name'      => 'Plugin for Contact Form',
-			'slug'      => 'contact-form-7',
+			'slug'      => 'ninja-forms',
 			'required'  => false,
 		),
 		

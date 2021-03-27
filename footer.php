@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="footer" style="background-image:url('img/map.png')">
+<footer class="footer">
 			<!-- Footer Top -->
 			<div class="footer-top">
 				<div class="container">
@@ -117,8 +117,11 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="copyright-content">
-								<!-- Copyright Text -->
-								<p>© Copyright - <a href="#"> </a> Design &amp; Development By Sylhet IT Park</a></p>
+							<?php 
+									if ( is_active_sidebar( 'copywritesection' ) ){
+									dynamic_sidebar('copywritesection');
+								}
+								?>
 							</div>
 						</div>
 					</div>

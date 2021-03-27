@@ -83,6 +83,24 @@ function personal_widgets_init() {
         'before_title'  => '<h2>',
         'after_title'   => '</h2>',
     ) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Contact form', 'personal' ),
+        'id'            => 'contactform',
+        'description'   => esc_html__( 'Contact form section', 'personal' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
+    ) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Copywrite Section', 'personal' ),
+        'id'            => 'copywritesection',
+        'description'   => esc_html__( 'Copywrite Section', 'personal' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ) );
  
 }
 add_action( 'widgets_init', 'personal_widgets_init' );

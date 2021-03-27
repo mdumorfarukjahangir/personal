@@ -34,46 +34,11 @@ get_header();
 					<div class="col-lg-7 col-md-7 col-12">
 						<!-- Contact Form -->
 						<div class="contact-form-area">
-							<h4>Get In Touch</h4>
-							<form class="form" method="post" action="mail/mail.php">
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-12">
-										<div class="form-group">
-											<div class="icon"><i class="fa fa-user"></i></div>
-											<input type="text" name="first_name" placeholder="First Name">
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-12">
-										<div class="form-group">
-											<div class="icon"><i class="fa fa-user"></i></div>
-											<input type="text" name="last_name" placeholder="Last Name">
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-12">
-										<div class="form-group">
-											<div class="icon"><i class="fa fa-envelope"></i></div>
-											<input type="email" name="email" placeholder="Type Subjects">
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 col-12">
-										<div class="form-group">
-											<div class="icon"><i class="fa fa-tag"></i></div>
-											<input type="text" name="subject" placeholder="Type Subjects">
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group textarea">
-											<div class="icon"><i class="fa fa-pencil"></i></div>
-											<textarea type="textarea" name="message" rows="5"></textarea>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group button">
-											<button type="submit" class="bizwheel-btn theme-2">Send Now</button>
-										</div>
-									</div>
-								</div>
-							</form>
+						<?php 
+									if ( is_active_sidebar( 'contactform' ) ){
+									dynamic_sidebar('contactform');
+								}
+								?>
 						</div>
 						<!--/ End contact Form -->
 					</div>
