@@ -16,8 +16,8 @@ get_header();
 							<!-- Bread Menu -->
 							<div class="bread-menu">
 								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="about.html">Documents</a></li>
+									<li><a href="<?php echo site_url(); ?>">Home</a></li>
+									<li><a href="<?php echo site_url('documents'); ?>">Documents</a></li>
 								</ul>
 							</div>
 							<!-- Bread Title -->

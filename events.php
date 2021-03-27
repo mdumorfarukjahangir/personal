@@ -19,12 +19,12 @@ get_header();
 							<!-- Bread Menu -->
 							<div class="bread-menu">
 								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li><a href="services.html">Events</a></li>
+									<li><a href="<?php echo site_url(); ?>">Home</a></li>
+									<li><a href="<?php echo site_url('events'); ?>">Events</a></li>
 								</ul>
 							</div>
 							<!-- Bread Title -->
-							 
+							
 						</div>
 					</div>
 				</div>
