@@ -15,6 +15,9 @@ get_header();
 						$args = array(  
 							'post_type' => 'imagegallery',
 							'post_status' => 'publish',
+							'orderby'   => 'rand',
+							'posts_per_page' => 5,
+							
 						 
 							 
 							
