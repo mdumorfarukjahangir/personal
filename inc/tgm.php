@@ -67,6 +67,12 @@ function personal_register_required_plugins() {
 			'slug'      => 'slider-video',
 			'required'  => false,
 		),
+		array(
+			'name'      => 'Plugin for Chat',
+			'slug'      => 'chaty',
+			'required'  => false,
+		),
+		
 		
 		
 	 
