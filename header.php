@@ -13,8 +13,9 @@
 		
 		<!-- Title Tag  -->
 		<title>
-		<?php bloginfo("name"); ?>
+		<?php echo get_the_title(); ?>
 		</title>
+		
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/favicon.png" href="img/favicon.png">
