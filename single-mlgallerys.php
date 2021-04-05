@@ -6,7 +6,7 @@ get_header();
 <section id="portfolio">
 	<!--  title-->
 	<div class="title">
-		<h1 class="title-text ">Gallery Image</h1>
+		<h1 class="title-text ">Single Gallery</h1>
 		<div class="title-underline"></div>
 	</div>
 	<!--  end of title-->

@@ -407,62 +407,6 @@ function create_document_cpt() {
 }
 add_action( 'init', 'create_document_cpt', 0 );
 
-// Register Custom Post Type About Me
-function create_aboutme_cpt() {
-
-	$labels = array(
-		'name' => _x( 'About Me', 'Post Type General Name', 'personal' ),
-		'singular_name' => _x( 'About Me', 'Post Type Singular Name', 'personal' ),
-		'menu_name' => _x( 'About Me Section', 'Admin Menu text', 'personal' ),
-		'name_admin_bar' => _x( 'About Me', 'Add New on Toolbar', 'personal' ),
-		'archives' => __( 'About Me Archives', 'personal' ),
-		'attributes' => __( 'About Me Attributes', 'personal' ),
-		'parent_item_colon' => __( 'Parent About Me:', 'personal' ),
-		'all_items' => __( 'About Me', 'personal' ),
-		'add_new_item' => __( 'Add New Section', 'personal' ),
-		'add_new' => __( 'Add New Section', 'personal' ),
-		'new_item' => __( 'New About Me Section', 'personal' ),
-		'edit_item' => __( 'Edit About Me Section', 'personal' ),
-		'update_item' => __( 'Update About Me Section', 'personal' ),
-		'view_item' => __( 'View About Me Section', 'personal' ),
-		'view_items' => __( 'View About Me Section', 'personal' ),
-		'not_found' => __( 'Not found', 'personal' ),
-		'not_found_in_trash' => __( 'Not found in Trash', 'personal' ),
-		'featured_image' => __( 'Featured Image', 'personal' ),
-		'set_featured_image' => __( 'Set featured image', 'personal' ),
-		'remove_featured_image' => __( 'Remove featured image', 'personal' ),
-		'use_featured_image' => __( 'Use as featured image', 'personal' ),
-		'insert_into_item' => __( 'Insert into About Me', 'personal' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this About Me', 'personal' ),
-		'items_list' => __( 'About Me list', 'personal' ),
-		'items_list_navigation' => __( 'About Me list navigation', 'personal' ),
-		'filter_items_list' => __( 'Filter About Me list', 'personal' ),
-	);
-	$args = array(
-		'label' => __( 'About Me', 'personal' ),
-		'description' => __( 'About Me Content Section ', 'personal' ),
-		'labels' => $labels,
-		'menu_icon' => 'dashicons-buddicons-buddypress-logo',
-		'supports' => array('title', 'editor'),
-		'taxonomies' => array(),
-		'public' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'menu_position' => 5,
-		'show_in_admin_bar' => true,
-		'show_in_nav_menus' => true,
-		'can_export' => true,
-		'has_archive' => true,
-		'hierarchical' => false,
-		'exclude_from_search' => false,
-		'show_in_rest' => true,
-		'publicly_queryable' => true,
-		'capability_type' => 'post',
-	);
-	register_post_type( 'aboutme', $args );
-
-}
-add_action( 'init', 'create_aboutme_cpt', 0 );
 
 // Register Custom Post Type Event
 function create_event_cpt() {
@@ -781,10 +725,10 @@ function property_gallery_styles_scripts(){
 		border: none;
 	}
     </style>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
-    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
     <script type="text/javascript">
         function remove_img(value) {
             var parent=jQuery(value).parent().parent();
